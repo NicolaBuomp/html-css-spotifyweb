@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- link cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!-- title of page -->
     <title>Spotify clone</title>
+    <!-- link css -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -13,9 +19,86 @@
         <main id="main-window">
             <!-- Sidebar -->
             <aside id="sidebar">
-                <div class="sidebar-top">Logo e Nav</div>
+                <div class="sidebar-top">
+                        <a href="#"><img class="logo-large" src="img/logo.svg" alt="Logo-spotify"></a>
+                        <a href="#"></a><img class="logo-small" src="img/logo-small.svg" alt="logo-spotify-small"></a>
 
-                <div class="sidebar-bottom">Account</div>
+                    <ul class="list-sidebar">
+                        <li>
+                            <a href="">
+                                <img src="img/home.svg" alt="">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/search.svg" alt="">
+                                <span>Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/libreria.svg" alt="">
+                                <span>La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h5>PLAYLIST</h5>
+
+                    <ul class="list-sidebar">
+                        <li>
+                            <a href="">
+                                <i class="fas fa-plus-square"></i>
+                                <span>Crea Playlist</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Rap</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Musica Classica</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Metal</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Rock</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Playlist Sport</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    </div>
+
+                <div class="sidebar-bottom">
+                    <ul class="list-sidebar">
+                        <li>
+                            <a href="#">
+                                <i class="far fa-arrow-alt-circle-down"></i>
+                                <span>Install app</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="#">
+                                <img src="img/profile.svg" alt="">
+                                <span class="id-name">John Doe</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </aside>
 
             <!-- Content -->
