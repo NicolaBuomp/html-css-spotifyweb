@@ -11,6 +11,7 @@ body {
 }
 
 /* UTILITIES */
+
 .list-sidebar{
     list-style: none;
 }
@@ -50,13 +51,25 @@ body {
 .subtitle-color{
     color: #999;
 }
+
+.hover-white a:hover{
+    color: #fff;
+}
+
+.text-w{
+    color: #fff;
+}
+
+.text-g{
+    color: #999;
+}
+
 /* LAYOUT */
 #app {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
-
 
 /* MAIN WINDOW */
 #main-window {
@@ -98,9 +111,6 @@ body {
 
 #sidebar .sidebar-top .list-sidebar>li>a>i{
     font-size: 42px;
-}
-
-.sidebar-bottom { 
 }
 
 #sidebar .sidebar-bottom .list-sidebar>hr{
@@ -166,7 +176,7 @@ body {
 }
 
 .content-category {
-    padding: 18px 0;
+    padding: 20px 0 10px ;
 }
 
 .content-category>h2{
@@ -185,6 +195,7 @@ body {
 
 .box>a>img{
     width: 100%;
+    object-fit: contain;
 }
 
 .content-category .albums .box .title-song{
@@ -208,6 +219,45 @@ body {
 }
 /* BOTTOM PLAYER */
 #player {
-    height: 80px; /*debug*/
+    border: 1px solid red;
     background: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#player .left-player {
+  flex-basis: 25%;
+}
+
+#player button:hover {
+  color: #fff;
+}
+
+.left-player {
+    display: flex;
+  align-items: center;
+}
+
+.left-player * {
+  margin-right: 10px;
+}
+
+.left-player img {
+  width: 45px;
+  height: 45px;
+}
+
+#player .icon-player a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+#player .left-player ul{
+    list-style: none;
+    margin-right: 50px;
+}
+
+#player .left-player ul li:first-child{
+    font-weight: bold;
 }
