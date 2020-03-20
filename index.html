@@ -21,7 +21,30 @@
             <aside id="sidebar">
                 <div class="sidebar-top">
                         <a href="#"><img class="logo-large" src="img/logo.svg" alt="Logo-spotify"></a>
-                        <a href="#"></a><img class="logo-small" src="img/logo-small.svg" alt="logo-spotify-small"></a>
+
+                        <ul class="list-sidebar-resp">
+                            <li>
+                                <a href="#">
+                                    <img src="img/logo-small.svg" alt="logo-spotify-small">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="active-left" src="img/home.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/search.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/libreria.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
 
                     <ul class="list-sidebar hover-white">
                         <li>
@@ -287,7 +310,11 @@
 
                 <div class="central-player-status">
                     <span class="text-w">0:25</span>
-                    <div class="status-bar inline-block"></div>
+                    <div class="status-bar">
+                        <div class="status-bar-active">
+                            <div class="point-status-bar"></div>
+                        </div>
+                    </div>
                     <span class="text-w">4:35</span>
                   </div>
             </section>
@@ -310,7 +337,10 @@
                         </a>
                     </li>
                     <li>
-                        <div class="status-bar status-bar--small"></div>
+                        <div class="status-bar status-bar--small">
+                            <div class="status-bar-active status-bar-active--small">
+                            </div>
+                        </div>
                     </li>
                 </ul>
                     
