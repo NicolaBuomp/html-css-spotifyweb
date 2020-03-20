@@ -243,6 +243,7 @@ body {
 .left-player {
     display: flex;
     align-items: center;
+    flex-basis: 30%
 }
 
 .left-player * {
@@ -256,7 +257,6 @@ body {
 
 #player .left-player ul{
     list-style: none;
-    margin-right: 50px;
 }
 
 #player .left-player ul li:first-child{
@@ -275,6 +275,10 @@ body {
     margin-right: 20px;
 }
 
+.icon-player li:last-child {
+    margin-right: 0;
+}
+
 .icon-player a{
     text-decoration: none;
     color: #ccc;
@@ -282,7 +286,7 @@ body {
 
 #player .player-center{
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 40%;
     flex-direction: column;
     justify-content: center;
 }
@@ -292,24 +296,29 @@ body {
     color: #fff;
 }
 
+.player-center .icon-player li a{
+    margin-right: 0;
+}
+
 .central-player-status{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: 50%;
-    flex-grow: 1;
 }
 
 .status-bar{
-    width: 80%;
+    display: flex;
     height: 3px;
     background-color: #999;
     border-radius: 16px;
+    margin: 0 5px;
+    width: 90%;
+    max-width: 100%;
     
 }
 
 .status-bar-active{
-    width: 10%;
+    width: 30%;
     height: 3px;
     background-color: #fff;
     border-radius: 16px;
@@ -320,14 +329,21 @@ body {
     border-radius: 50%;
 } */
 
-.central-player-status span{
+/* .central-player-status span{
     display: block;
-    margin: 0 5px;
-}
+    margin-right: 5px;
+} */
 
 .icon-player-right{
     display: flex;
     align-items: center;
+}
+
+.player-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 30%;
+    margin-left: 10px;
 }
 
 .player-right .icon-player-right li:last-child{
@@ -353,8 +369,8 @@ body {
 
 @media (max-width: 768px) {
 
-    .box{
-        width: 155px;
+    #sidebar{
+        flex-basis: 50px;
     }
 
     #sidebar .logo-large{
@@ -375,5 +391,52 @@ body {
 
     .sidebar-top{
         flex-grow:0;
+    }
+
+    .box{
+        width: 242px;
+    }
+
+    .box:nth-of-type(2){
+        margin-right: 0;
+    }
+
+    #player .left-player ul {
+        margin-right: 0;
+    }
+
+    .left-player {
+        display: flex;
+        align-items: center;
+        flex-basis: 25%;
+    }
+    
+    .left-player img {
+        width: 40px;
+    }
+
+    .left-player .icon-player{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+
+    .player-center .icon-player{
+        font-size: 15px;
+    }
+
+    .player-center .icon-player li:nth-child(3) a{
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .player-right{
+        flex-basis: 25%;
+    }
+
+    .player-right .icon-player{
+        font-size: 12px;
+        margin-left:5px;
     }
 }
