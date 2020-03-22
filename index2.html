@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- link cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!-- title of page -->
+    <title>Spotify clone</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="styles2/utilities.css">
+    <link rel="stylesheet" href="styles2/main.css">
+</head>
+<body>
+    
+    <div id="app">
+        <!-- Main content -->
+        <main id="main-window">
+            <!-- Sidebar -->
+            <aside id="sidebar">
+                    <div class="sidebar-top">
+                            <a href="#"><img class="logo-large" src="img/logo.svg" alt="Logo-spotify"></a>
+    
+                            <ul class="list-sidebar-resp">
+                                <li>
+                                    <a href="#">
+                                        <img src="img/logo-small.svg" alt="logo-spotify-small">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img class="active-left" src="img/home.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/search.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/libreria.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+    
+    
+                        <ul class="list-sidebar hover-white">
+                            <li>
+                                <a href="">
+                                    <img class="active-left" src="img/home.svg" alt="">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/search.svg" alt="">
+                                    <span>Cerca</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/libreria.svg" alt="">
+                                    <span>La tua libreria</span>
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <h4 class="pad-10">PLAYLIST</h4>
+    
+                        <ul class="list-sidebar hover-white">
+                            <li>
+                                <a href="">
+                                    <i class="fas fa-plus-square"></i>
+                                    <span>Crea Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Rap</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Musica Classica</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Metal</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Rock</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Playlist Sport</span>
+                                </a>
+                            </li>
+                        </ul>
+    
+                        </div>
+    
+                    <div class="sidebar-bottom">
+                        <ul class="list-sidebar hover-white">
+                            <li>
+                                <a href="#">
+                                    <i class="far fa-arrow-alt-circle-down"></i>
+                                    <span>Install app</span>
+                                </a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="#">
+                                    <img class="radius-img" src="img/profile.svg" alt="">
+                                    <span class="id-name">John Doe</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </aside>
+
+            <!-- Content -->
+            <div id="content">
+                    <div class="content-top-bar">
+                        <a href="">EFFETTUA L'UPGRADE</a>
+                    </div>
+                    <div class="scrollable">
+                        <ul class="list-nav hover-white">
+                            <li>
+                                 <a href="">
+                                    <span class="active-bottom">IN EVIDENZA</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                   <span>PODCAST</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>CLASSIFICHE</span>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="">
+                                    <span>GENERI E MOOD</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>NUOVE USCITE</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>SCOPRI</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h2 class="pad-10">Recently played</h2>
+
+                    <section class="content-category">
+                        
+                        <div class="box">
+                            <div class="box-logo">
+                                <img src="img/metal_lifting.jpg" alt="">
+                            </div>
+                            <p class="u-text-center u-text-bold">Heavy Metal</p>
+                            <p class="u-text-center u-text-g">Subtitle</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-logo">
+                                <img src="img/stranger.jpeg" alt="">
+                            </div>
+                            <p class="u-text-center u-text-bold">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</p>
+                            <p class="u-text-center u-text-g">Kyle Dixon & Micheal Stein</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-logo">
+                                <img src="img/aquietplace.jpeg" alt="">
+                            </div>
+                            <p class="u-text-center u-text-bold">A quiet place</p>
+                            <p class="u-text-center u-text-g">Subtitle</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-logo">
+                                <img src="img/split.jpeg" alt="">
+                            </div>
+                            <p class="u-text-center u-text-bold">Split</p>
+                            <p class="u-text-center u-text-g">Subtitle</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-logo">
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
+                            <p class="u-text-center u-text-bold">A cure for wellness</p>
+                            <p class="u-text-center u-text-g">Subtitle</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-logo">
+                                <img src="img/sinister.jpeg" alt="">
+                            </div>
+                            <p class="u-text-center u-text-bold">Sinister</p>
+                            <p class="u-text-center u-text-g">Subtitle</p>
+                        </div>
+
+                    </section>
+
+                    <h2>Creato per John Doe</h2>
+                    <h5 class="u-text-g pad-10">Piu` ascolti, piu` accurati sono i suggerimenti.</h5>
+                    <section class="content-category">
+                        
+                        <div class="box">
+                            <div class="box-logo">
+                                <img src="img/radar.jpeg" alt="">
+                            </div>
+                            <p class="u-text-center u-text-bold">Release Radar</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-logo">
+                                <img src="img/mixdaily.jpeg" alt="">
+                            </div>
+                            <p class="u-text-center u-text-bold">Daily Mix 1</p>
+                        </div>
+
+                    </section>
+
+                    <h2>Artisti piu' Popolari</h2>
+                    <h5 class="u-text-g pad-10">Piu` ascolti, piu` accurati sono i suggerimenti.</h5>
+                    <section class="content-category">
+                        
+                        <div class="box">
+                            <div class="box-logo">
+                                <img class="radius-img" src="img/young.jpeg" alt="">
+                            </div>
+                            <p class="u-text-center u-text-bold">Lana del Rey</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-logo">
+                                <img class="radius-img" src="img/einaudi.jpeg" alt="">
+                            </div>
+                            <p class="u-text-center u-text-bold">Ludovico Einaudi</p>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Player -->
+        <footer id="player">
+            <section id="left-player">
+                <img src="img/sinister.jpeg" alt="">
+                <ul>
+                    <li class="u-text-bold">Sinister</li>
+                    <li class="u-text-g">Brano Nome</li>
+                </ul>
+                
+
+                <div class="icon-left-player hover-white">
+                    
+                    <a class="u-text-g" href=""><i class="far fa-heart"></i></a>
+                    <a class="u-text-g" href=""><i class="far fa-folder"></i></a>
+                   
+                </div>
+ 
+            </section>
+
+            <section id="center-player">
+                <div class="center-player-top">
+                    <ul class="icon-player hover-white">
+                        <li>
+                            <a href="">
+                                <i class="fas fa-random"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-step-backward"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="far fa-play-circle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-step-forward"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-redo-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="center-top-bottom">
+                    <div class="central-player-status">
+                        <span class="text-w">1:25</span>
+                        <div class="status-bar">
+                            <div class="status-bar-active">
+                                <div class="point-status-bar"></div>
+                            </div>
+                        </div>
+                        <span class="text-w">4:35</span>
+                      </div>
+                </div>
+
+            </section>
+
+            <section id="right-player">
+                <ul class="icon-player-right icon-player hover-white">
+                    <li>
+                        <a href="">
+                            <i class="fas fa-list-ul text-white"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-tv text-white"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-volume-up text-white"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="status-bar status-bar--small">
+                            <div class="status-bar-active status-bar-active--small">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </footer>
+    </div>
+
+</body>
+</html>

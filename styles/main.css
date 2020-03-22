@@ -231,7 +231,6 @@ body {
 }
 /* BOTTOM PLAYER */
 #player {
-    border: 1px solid red;
     background: #333;
     display: flex;
     width: 100%;
